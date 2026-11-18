@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Exempel · SCANDI STUDIOS</title>
+<meta name="description" content="Exempel på hur templaten används.">
+<!-- typsnitten från google fonts -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;500&amp;family=Jost:wght@300;400;500&amp;display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<!-- HEADER - samma på alla sidor, ändra inte utan att fråga gruppen!! -->
+
+<header>
+    <a href="index.html"><img src="img/logo.png" alt="">SCANDI STUDIOS</a>
+
+  <!-- menyn (lägg aria-current="page" på sidan man är på) -->
+  <nav aria-label="Huvudmeny">
+      <a href="klasser.html">Våra klasser</a>
+      <a href="coffeelounge.html">Coffeelounge</a>
+      <a href="event.html">Våra event</a>
+      <a href="medlem.html">Bli medlem</a>
+      <a href="om-oss.html">Om oss</a>
+      <a href="kontakt.html">Kontakt</a>
+  </nav>
+
+  <!-- boka knappen till höger -->
+  <a class="knapp" href="boka.html">Boka klass</a>
+</header>
+<!-- slut header -->
+
+
+<main id="innehall">
+
+<!-- den här sidan visar bara exempel på hur templaten används. den finns inte i menyn -->
+
+  <section class="sektion">
+  <h1>Exempel</h1>
+    <p>Det här är bara en template, alltså en startpunkt och inte en färdig sida. Header, meny och footer finns med så att alla sidor ser likadana ut, men allt innehåll bygger vi tillsammans. Vi kan lägga till mer i templaten när vi behöver.</p>
+    <p>Här under finns exempel på allt som finns i templaten. Först kommer koden och sen hur det ser ut på riktigt.</p>
+      <p>Allt man skriver ska in mellan &lt;main&gt; och &lt;/main&gt;. Headern och footern behöver man inte röra.</p>
+  </section>
+
+
+<!-- 1. sections -->
+<section class="sektion">
+    <p class="liten-text">Exempel 1</p>
+    <h2>Section</h2>
+    <p>Sidorna är uppbyggda av sections som ligger under varandra. Allt man lägger i en section hamnar i mitten automatiskt. Den lilla texten över headingen har class liten-text.</p>
+<pre>&lt;section
+  class=&quot;sektion beige&quot;&gt;
+  &lt;!-- lilla texten --&gt;
+  &lt;p class=&quot;liten-text&quot;&gt;
+    Liten text&lt;/p&gt;
+  &lt;h2&gt;En rubrik&lt;/h2&gt;
+  &lt;p&gt;Lite text här.&lt;/p&gt;
+&lt;/section&gt;</pre>
+    <p class="liten-text">Så här blir det</p>
+</section>
+  <section class="sektion beige">
+    <p class="liten-text">Liten text</p>
+    <h2>En rubrik</h2>
+    <p>Lite text här.</p>
+  </section>
+
+<!-- 2. färger -->
+  <section class="sektion">
+  <p class="liten-text">Exempel 2</p>
+    <h2>Färger</h2>
+    <p>Vi har tre färger till våra sections: beige, rosa och brun. Man skriver bara färgen efter sektion i class. Skriver man ingen färg blir den ljus som den här. Om man väljer brun blir texten och buttons ljusa av sig själv.</p>
+    <p>Lägg inte två likadana färger efter varandra, då ser det ut som en enda stor section.</p>
+<pre>&lt;section
+  class=&quot;sektion beige&quot;&gt;
+  &lt;h2&gt;Beige&lt;/h2&gt;
+&lt;/section&gt;
+
+&lt;section
+  class=&quot;sektion rosa&quot;&gt;
+  &lt;h2&gt;Rosa&lt;/h2&gt;
+&lt;/section&gt;
+
+&lt;!-- texten blir ljus --&gt;
+&lt;section
+  class=&quot;sektion brun&quot;&gt;
+  &lt;h2&gt;Brun&lt;/h2&gt;
+&lt;/section&gt;</pre>
+    <p class="liten-text">Så här blir det</p>
+  </section>
+
+  <section class="sektion beige">
+    <h2>Beige</h2>
+  </section>
+<section class="sektion rosa">
+    <h2>Rosa</h2>
+</section>
+  <section class="sektion brun">
+      <h2>Brun</h2>
+  </section>
+
+
+<!-- 3. buttons -->
+  <section class="sektion">
+    <p class="liten-text">Exempel 3</p>
+    <h2>Buttons</h2>
+    <p>Det finns två buttons. Den fyllda (class knapp) är till det viktigaste, till exempel "Boka klass". Den med bara en border (class knapp-ram) är till resten. Om man lägger dem i samma p hamnar de bredvid varandra.</p>
+    <p>På mörk bakgrund och på stora bilder blir de ljusa automatiskt.</p>
+<pre>&lt;p&gt;
+  &lt;!-- fylld knapp --&gt;
+  &lt;a class=&quot;knapp&quot;
+    href=&quot;boka.html&quot;&gt;
+    Boka klass&lt;/a&gt;
+  &lt;!-- bara kant --&gt;
+  &lt;a class=&quot;knapp-ram&quot;
+    href=&quot;klasser.html&quot;&gt;
+    Se klasser&lt;/a&gt;
+&lt;/p&gt;</pre>
+    <p class="liten-text">Så här blir det</p>
+  </section>
+  <section class="sektion beige">
+    <p>
+      <a class="knapp" href="boka.html">Boka klass</a>
+      <a class="knapp-ram" href="klasser.html">Se klasser</a>
+    </p>
+  </section>
+
+  <!-- samma buttons på brun -->
+  <section class="sektion brun">
+  <p>
+    <a class="knapp" href="boka.html">Boka klass</a>
+    <a class="knapp-ram" href="klasser.html">Se klasser</a>
+  </p>
+  </section>
+
+<!-- 4. kort -->
+  <section class="sektion">
+    <p class="liten-text">Exempel 4</p>
+    <h2>Cards bredvid varandra</h2>
+    <p>Om man vill ha flera saker bredvid varandra (som klasserna) så använder man cards (class kort). Lägg dem i en div med class kort-rad runt. Det blir max tre på en rad och sen fortsätter de på nästa rad. Bilden får en rund topp automatiskt.</p>
+<pre>&lt;!-- kort-rad runt om --&gt;
+&lt;div class=&quot;kort-rad&quot;&gt;
+  &lt;article class=&quot;kort&quot;&gt;
+    &lt;img
+      src=&quot;img/matwork.webp&quot;
+      alt=&quot;Matwork&quot;&gt;
+    &lt;h3&gt;Matwork&lt;/h3&gt;
+    &lt;p&gt;Lite text.&lt;/p&gt;
+  &lt;/article&gt;
+  &lt;article class=&quot;kort&quot;&gt;
+    &lt;img
+      src=&quot;img/lokal.webp&quot;
+      alt=&quot;Barre&quot;&gt;
+    &lt;h3&gt;Barre&lt;/h3&gt;
+    &lt;p&gt;Lite text.&lt;/p&gt;
+  &lt;/article&gt;
+  &lt;article class=&quot;kort&quot;&gt;
+    &lt;img
+      src=&quot;img/60plus.webp&quot;
+      alt=&quot;60+ Pilates&quot;&gt;
+    &lt;h3&gt;60+ Pilates&lt;/h3&gt;
+    &lt;p&gt;Lite text.&lt;/p&gt;
+  &lt;/article&gt;
+&lt;/div&gt;</pre>
+    <p class="liten-text">Så här blir det</p>
+  </section>
+
+  <section class="sektion beige">
+    <div class="kort-rad">
+      <article class="kort">
+        <img src="img/matwork.webp" alt="Matwork">
+        <h3>Matwork</h3>
+        <p>Lite text.</p>
+      </article>
+    <article class="kort">
+      <img src="img/lokal.webp" alt="Barre">
+        <h3>Barre</h3>
+        <p>Lite text.</p>
+    </article>
+      <article class="kort">
+        <img src="img/60plus.webp" alt="60+ Pilates">
+        <h3>60+ Pilates</h3>
+        <p>Lite text.</p>
+      </article>
+    </div>
+  </section>
+
+
+<!-- 5. bild och text -->
+<section class="sektion">
+    <p class="liten-text">Exempel 5</p>
+    <h2>Bild och text bredvid varandra</h2>
+    <p>Med class bild-text hamnar bilden på ena sidan och texten på andra. Den som står först i koden hamnar till vänster, så vill man ha bilden till höger lägger man texten först. På mobilen hamnar de under varandra istället.</p>
+<pre>&lt;div class=&quot;bild-text&quot;&gt;
+  &lt;!-- bilden vänster --&gt;
+  &lt;img
+    src=&quot;img/matchabar.webp&quot;
+    alt=&quot;Coffee bar&quot;&gt;
+  &lt;div&gt;
+    &lt;h2&gt;Rubrik&lt;/h2&gt;
+    &lt;p&gt;Lite text här.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+    <p class="liten-text">Så här blir det</p>
+</section>
+  <section class="sektion beige">
+    <div class="bild-text">
+      <img src="img/matchabar.webp" alt="Coffee bar">
+      <div>
+          <h2>Rubrik</h2>
+          <p>Lite text här.</p>
+      </div>
+    </div>
+  </section>
+
+<!-- 6. stora bilden med text på -->
+  <section class="sektion">
+    <p class="liten-text">Exempel 6</p>
+    <h2>Stor bild med text ovanpå</h2>
+    <p>Med class stor-bild får man en stor bild med text ovanpå. Bilden blir lite mörkare så att man kan läsa texten. Den passar bäst högst upp på sidan och då ska man skriva h1 istället för h2 eftersom det är sidans största heading.</p>
+<pre>&lt;section class=&quot;stor-bild&quot;&gt;
+  &lt;!-- bilden först --&gt;
+  &lt;img
+    src=&quot;img/lokal.webp&quot;
+    alt=&quot;Studion&quot;&gt;
+  &lt;p class=&quot;liten-text&quot;&gt;
+    Liten text&lt;/p&gt;
+  &lt;h2&gt;Stor rubrik&lt;/h2&gt;
+  &lt;p&gt;Lite text här.&lt;/p&gt;
+&lt;/section&gt;</pre>
+    <p class="liten-text">Så här blir det</p>
+  </section>
+
+  <section class="stor-bild">
+    <img src="img/lokal.webp" alt="Studion">
+    <p class="liten-text">Liten text</p>
+    <h2>Stor rubrik</h2>
+    <p>Lite text här.</p>
+  </section>
+
+
+<!-- 7. när vi inte vet något än -->
+  <section class="sektion">
+  <p class="liten-text">Exempel 7</p>
+    <h2>Något vi inte vet än</h2>
+    <p>Om vi inte har fått något från kunden än, till exempel priser, använd class saknas med ??? i. Då syns det tydligt vad som fattas.</p>
+<pre>&lt;p&gt;Pris:
+  &lt;span
+    class=&quot;saknas&quot;&gt;
+    ???&lt;/span&gt;
+&lt;/p&gt;</pre>
+    <p class="liten-text">Så här blir det</p>
+  </section>
+  <section class="sektion beige">
+    <p>Pris: <span class="saknas">???</span></p>
+  </section>
+
+<!-- 8. forms -->
+  <section class="sektion">
+    <p class="liten-text">Exempel 8</p>
+    <h2>Form</h2>
+    <p>Forms blir snygga av sig själva, man behöver ingen class. Skriv required på det som måste fyllas i, då går det inte att skicka utan det. Formen skickas till tack.html.</p>
+<pre>&lt;form action=&quot;tack.html&quot;
+  method=&quot;get&quot;&gt;
+  &lt;label&gt;Namn
+    &lt;input type=&quot;text&quot;
+      name=&quot;namn&quot; required&gt;
+  &lt;/label&gt;
+  &lt;label&gt;E-post
+    &lt;input type=&quot;email&quot;
+      name=&quot;epost&quot; required&gt;
+  &lt;/label&gt;
+  &lt;!-- skicka knappen --&gt;
+  &lt;button type=&quot;submit&quot;&gt;
+    Skicka&lt;/button&gt;
+&lt;/form&gt;</pre>
+    <p class="liten-text">Så här blir det</p>
+  </section>
+
+  <section class="sektion beige">
+    <form action="tack.html" method="get">
+      <label>Namn <input type="text" name="namn" required></label>
+      <label>E-post <input type="email" name="epost" required></label>
+    <button type="submit">Skicka</button>
+    </form>
+  </section>
+
+
+  <!-- bra att veta -->
+  <section class="sektion">
+    <p class="liten-text">Bra att veta</p>
+    <h2>Några saker till</h2>
+    <p>Bilderna ligger i img foldern. Gör dem små innan de läggs in, helst under 100 kb. Skriv alltid en alt text som säger vad som är på bilden.</p>
+       <p>Bara en h1 per sida. Skriv inte style="..." direkt i html:en, använd våra classes istället så ser allt likadant ut.</p>
+    <p>Spara och tryck F5 i browsern för att se ändringarna.</p>
+  </section>
+
+<!-- slut på exemplen -->
+
+</main>
+
+
+<!-- footer, också samma på alla sidor -->
+<footer>
+  <img src="img/logo.png" alt="">
+    <p>SCANDI STUDIOS · Pilates, coffee bar och event i Paris</p>
+
+  <nav aria-label="Sidfot">
+    <a href="klasser.html">Våra klasser</a>
+    <a href="boka.html">Boka klass</a>
+    <a href="boka.html#avboka">Avboka pass</a>
+    <a href="coffeelounge.html">Coffeelounge</a>
+      <a href="event.html">Våra event</a>
+    <a href="medlem.html">Bli medlem</a>
+    <a href="om-oss.html">Om oss</a>
+    <a href="kontakt.html">Kontakt</a>
+  </nav>
+  <p>© SCANDI STUDIOS · Webbprojekt, grupp 5</p>
+</footer>
+
+</body>
+</html>
