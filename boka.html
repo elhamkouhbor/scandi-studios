@@ -34,56 +34,6 @@
 
 <main id="innehall">
   <!-- bokning + avboka - Evelina skriver här -->
-  <section class="sektion beige">
-    <p><a href="index.html">Startsida</a> / Boka klass</p>
-    <p class="liten-text">Boka klass</p>
-    <h1>Välj klass, välj pass, klart</h1>
-    <p>Fyll i formuläret så bokar vi din plats. Schema och lediga platser <span class="saknas">???</span></p>
-    <form action="bekraftelse.html" method="get">
-      <fieldset>
-        <legend>1. Välj klass</legend>
-        <label><input type="radio" name="klass" value="matwork" required> Matwork</label>
-        <label><input type="radio" name="klass" value="reformer"> Reformer Pilates</label>
-        <label><input type="radio" name="klass" value="barre"> Barre</label>
-        <label><input type="radio" name="klass" value="hot-pilates"> Hot Pilates</label>
-        <label><input type="radio" name="klass" value="mammapilates"> Mammapilates</label>
-        <label><input type="radio" name="klass" value="60-plus"> 60+ Pilates</label>
-        <p>Osäker på vilken klass? <a href="klasser.html">Läs om klasserna här</a></p>
-      </fieldset>
-      <fieldset>
-        <legend>2. Välj dag och tid</legend>
-        <label>Dag <input type="date" name="dag" required></label>
-        <label>Tid
-          <select name="tid" required>
-            <option value="">Välj ett pass</option>
-            <option value="pass-1">Pass 1 (tid ???)</option>
-            <option value="pass-2">Pass 2 (tid ???)</option>
-            <option value="pass-3">Pass 3 (tid ???)</option>
-          </select>
-        </label>
-      </fieldset>
-      <fieldset>
-        <legend>3. Dina uppgifter</legend>
-        <label>Namn <input type="text" name="namn" autocomplete="name" required></label>
-        <label>E-post <input type="email" name="epost" autocomplete="email" required></label>
-      </fieldset>
-      <p>Enstaka pass betalas på plats. Medlemmar betalar via års- eller månadsavgift. Pris <span class="saknas">???</span></p>
-      <button type="submit">Bekräfta bokning</button>
-    </form>
-  </section>
-
-  <section class="sektion" id="avboka">
-    <p class="liten-text">Kan du inte komma?</p>
-    <h2>Avboka pass</h2>
-    <p>Avboka ditt pass så att någon annan kan ta platsen.</p>
-    <p>Senast avbokning <span class="saknas">???</span> · Sen avbokning <span class="saknas">???</span></p>
-    <p>Bokningsnumret står i din bekräftelse. Behöver du hjälp? <a href="kontakt.html">Kontakta oss</a></p>
-    <form action="avbokad.html" method="get">
-      <label>E-post <input type="email" name="epost" autocomplete="email" required></label>
-      <label>Bokningsnummer <input type="text" name="bokningsnummer" required></label>
-      <button type="submit">Avboka passet</button>
-    </form>
-  </section>
 
   <!-- slut bokning + avboka -->
 </main>
